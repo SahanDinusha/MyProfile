@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@411&display=swap');
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(backgroundp.jpg);
+    margin: -2svb;
+}
+
+#nav {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#nav a {
+    font-family: "Oswald", serif;
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+}
+
+#nav a:hover {
+    background-color: #ff4000;
+}
+
+#About a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #ff4000;
+}
+
+#About {
+    padding-top: 30px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+#pp {
+    float: right;
+    width: 250px;
+    height: 280px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+    margin-right: 50px;
+}
+
+#pizza {
+    font-family: "Oswald", serif;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    line-height: 2.5;
+    padding-left: 25px;
+    padding-right: 35px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#pbackground {
+    background-image: url(p);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    width: 80%;
+    padding: 5px;
+    flex-wrap: wrap; 
+}
+
+#projects {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+    flex: 1;
+    min-width: 300px; 
+}
+
+#projects h3 {
+    color: #ff4000;
+    font-family: "Oswald", serif;
+    margin-bottom: 15px;
+}
+
+#projects p {
+    color: #ffffff;
+    font-family: "Oswald", serif;
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+#contactcontainer {
+    max-width: 600px;
+    margin: 50px auto;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#contactcontainer p {
+    font-family: "Kanit", serif;
+    font-size: 16px;
+    line-height: 2;
+}
+
+#contactform {
+    text-align: left;
+    font-family: "Kanit", serif;
+}
+
+#contactform input,
+#contactform textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#contactcontainer button {
+    background-color: #ff4000b6;
+    color: bisque;
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: "Oswald", serif;
+    letter-spacing: 2px;
+    font-size: larger;
+    color: black;
+}
+
+#socialcontainer {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(backgroundp.jpg);
+    margin: -2svb;
+}
+
+@media screen and (max-width: 1024px) {
+    #pcontainer {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    #pp {
+        width: 200px;
+        height: 220px;
+        margin: 0 auto;
+    }
+
+    #nav a {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #pizza {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    #projects p {
+        font-size: 14px;
+    }
+
+    #contactcontainer {
+        width: 90%;
+    }
+
+    #contactform input,
+    #contactform textarea,
+    #contactcontainer button {
+        font-size: 0.9rem;
+    }
+
+    #socialcontainer {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #pp {
+        width: 180px;
+        height: 200px;
+    }
+
+    #pcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #contactform input,
+    #contactform textarea {
+        font-size: 1rem;
+    }
+
+    #socialcontainer {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
